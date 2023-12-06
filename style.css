@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+/* PÁGINA PRINCIPAL */
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --cor-de-fundo: #00030C;
+    --botao-azul: #167BF7;
+    --fonte-principal: "Inter";
+    --campo-login: #161616
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.principal {
+    background-image: url(./assets/Background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container_botao {
+    display: block;
+    text-decoration: none;
+    color: var(--branco-principal);
+    background-color: var(--botao-azul);
+    border-radius: 8px;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: 1px solid var(--branco-principal);
+}
+
+.container_aviso {
+    font-size: 12px;
+    color: var(--cinza-secundario);
+    text-align: center;
+}
+
+.container_titulo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container_imagem {
+    margin: 1em 0 2em 0;
+}
+
+.container_caixa {
+    margin: 0 6em;
+}
+
+.secundario_imagem {
+    width: 80%;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao_titulo {
+    color: var(--branco-principal);
+    font-weight: 700;
+    font-size: 48px;
+    margin: 0.1em;
+}
+
+.descricao_texto {
+    color: var(--cinza-secundario);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.secundario_botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container_descricao {
+    padding: 2em;
+}
+
+.dispositivos {
+    text-align: center;
+    margin-top: 264px;
+}
+
+.dispositivo_titulo {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+}
+
+.dispositivo_lista {
+    margin-top: 40px;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.lista_item {
+    margin-top: 16px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    list-style-type: none;
+}
+
+.rodape__texto {
+    color: var(--cinza-secundario);
+    margin-bottom: 16px;
+    margin-top: 24px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.rodape {
+    text-align: center;
+    margin: 0 3em;
+}
+
+.rodape__logo {
+    margin-bottom: 40.71px;
+    margin-top: 145px;
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    font-size: 16px;
+    font-weight: 400;
+    
+}
+
+/* PÁGINA DE LOGIN */
+.principal {
+    background-image: url(./assets/Background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+label {
+    display: block;
+
+}
+
+.login_titulo {
+    margin-bottom: 1em;
+    font-size: 40px;
+}
+
+.digitar_email {
+    margin-bottom: 15px;
+}
+
+
+.digiteaqui {
+    font-size: 20px;
+}
+
+.espaco {
+    font-size: 2em;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    background-color: var(--campo-login);
+    border: solid 1px black;
+    color: var(--branco-principal);
+}
+
+.botoes_login {
+    display: row;
+    background-color: var(--botao-azul);
+    border-radius: 8px;
+    padding: 6px;
+    margin-top: 1em;
+    margin-right: 93px;
+    margin-left: 93px;
+    transition: background 0.4s;
+    
+}
+
+.botao_login {
+    color: var(--branco-principal);
+    text-decoration: none;
+    margin-left: 1em;
+}
+
+.botoes_criar {
+    display: row;
+    background-color: var(--botao-azul);
+    border-radius: 8px;
+    padding: 6px;
+    margin-top: 1em;
+    margin-right: 93px;
+    margin-left: 93px;
+    transition: background 0.4s;
+    
+}
+
+.botao_criar {
+    color: var(--branco-principal);
+    text-decoration: none;
+    margin-left: 1em;
+}    
+
+.esqueciminhasenha {
+    color: var(--cinza-secundario);
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.esqueciminhasenha:hover {
+    text-decoration: underline;
+    color: var(--branco-principal);
+}
+
+.botoes_criar:hover {
+    display: row;
+    border: 1px solid var(--botao-azul);
+    background-color: transparent;
+    border-radius: 8px;
+    padding: 6px;
+    margin-top: 1em;
+    margin-right: 93px;
+    margin-left: 93px;
+    transition: background 0.4s;
+
+}
+
+.botoes_login:hover {
+    display: row;
+    border: 1px solid var(--botao-azul);
+    background-color: transparent;
+    border-radius: 8px;
+    padding: 6px;
+    margin-top: 1em;
+    margin-right: 93px;
+    margin-left: 93px;
+    transition: background 0.4s;
+    transition
+}
+
+/* PÁGINA FINAL */
+.endone {
+    margin-bottom: 3em;    
+}
